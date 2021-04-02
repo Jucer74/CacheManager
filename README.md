@@ -20,6 +20,8 @@ Al adicionar al caché, debemos determinar cuanto tiempo deben almacenarse los d
 # Implementación
 Nuestra solución consta de tres (3) proyectos:
 
+![](https://github.com/Jucer74/CacheManager/blob/main/Images/Cache-Aside-Pattern-Solution.png)
+
 1. **CacheStore**: Contiene la implementación simple de este patrón
 2. **CacheManager**: Contiene la implementación mejorada de este patrón
 3. **CacheWebApp**:Contiene una aplicacion Web en donde se muestra el uso de ambas librerías.
