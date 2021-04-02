@@ -10,9 +10,17 @@ namespace CacheAsidePattern.CacheStore
         private readonly Dictionary<string, TimeSpan> _expirationConfiguration;
         private readonly IMemoryCache _memoryCache;
 
-        public CacheStore(IMemoryCache memoryCache, Dictionary<string, TimeSpan>? expirationConfiguration = null)
+        public CacheStore(IMemoryCache memoryCache, Dictionary<string, TimeSpan> expirationConfiguration = null)
         {
-            _memoryCache = memoryCache;
+            if (memoryCache is null)
+            {
+                _memoryCache = new MemoryCache(new MemoryCacheOptions());
+            }
+            else
+            {
+                _memoryCache = memoryCache;
+            };
+
             _expirationConfiguration = expirationConfiguration;
         }
 

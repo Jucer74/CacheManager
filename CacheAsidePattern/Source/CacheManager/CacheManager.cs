@@ -11,7 +11,7 @@ namespace CacheAsidePattern.CacheManager
         private readonly Dictionary<string, TimeSpan> _expirationConfiguration;
         private readonly IMemoryCache _memoryCache;
 
-        public CacheManager(IMemoryCache cache, Dictionary<string, TimeSpan>? expirationConfiguration = null)
+        public CacheManager(IMemoryCache cache, Dictionary<string, TimeSpan> expirationConfiguration = null)
         {
             if (cache is null)
             {

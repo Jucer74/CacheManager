@@ -22,12 +22,12 @@ Nuestra solución consta de tres (3) proyectos:
 
 ![](https://github.com/Jucer74/CacheManager/blob/main/Images/Cache-Aside-Pattern-Solution.png)
 
-1. **CacheStore**: Contiene la implementación simple de este patrón
-2. **CacheManager**: Contiene la implementación mejorada de este patrón
-3. **CacheWebApp**:Contiene una aplicacion Web en donde se muestra el uso de ambas librerías.
+1. **CacheStore**: Contiene la implementación simple del manejo del caché.
+2. **CacheManager**: Contiene la implementación mejorada de este patrón.
+3. **CacheWebApi**: Contiene una Web API en donde se muestra el uso de ambas librerías.
 
 ## Recursos
-Se tiene una Base de datos de tipo SQLite con dos tablas pobladas como fuente de datos.
+Se tiene una Base de datos de tipo SQLite como fuente de datos, que contiene la lista de paises del mundo segun el estandar [ISO-3166-1](https://www.iso.org/iso-3166-country-codes.html).
 
 
 
