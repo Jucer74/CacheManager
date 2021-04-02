@@ -17,7 +17,15 @@ Al adicionar al caché, debemos determinar cuanto tiempo deben almacenarse los d
 
 ![](https://github.com/Jucer74/CacheManager/blob/main/Images/Cache-Aside-Pattern-Algorithm.png)
 
+# Implementación
+Nuestra solución consta de tres (3) proyectos:
 
+1. **CacheStore**: Contiene la implementación simple de este patrón
+2. **CacheManager**: Contiene la implementación mejorada de este patrón
+3. **CacheWebApp**:Contiene una aplicacion Web en donde se muestra el uso de ambas librerías.
+
+## Recursos
+Se tiene una Base de datos de tipo SQLite con dos tablas pobladas como fuente de datos.
 
 
 
