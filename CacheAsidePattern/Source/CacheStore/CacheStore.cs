@@ -10,7 +10,7 @@ namespace CacheAsidePattern.CacheStore
         private readonly Dictionary<string, TimeSpan> _expirationConfiguration;
         private readonly IMemoryCache _memoryCache;
 
-        public CacheStore(IMemoryCache memoryCache, Dictionary<string, TimeSpan> expirationConfiguration)
+        public CacheStore(IMemoryCache memoryCache, Dictionary<string, TimeSpan>? expirationConfiguration = null)
         {
             _memoryCache = memoryCache;
             _expirationConfiguration = expirationConfiguration;
@@ -42,7 +42,7 @@ namespace CacheAsidePattern.CacheStore
 
         private TimeSpan? GetExpirationTime(string key)
         {
-            if (_expirationConfiguration.ContainsKey(key))
+            if (!(_expirationConfiguration is null) && _expirationConfiguration.ContainsKey(key))
             {
                 return _expirationConfiguration[key];
             }
