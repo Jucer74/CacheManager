@@ -33,7 +33,7 @@ namespace CacheWebApi.Controllers
         [Route("CacheManager")]
         public async Task<ActionResult<IEnumerable<Country>>> GetCountriesUsingCacheManager()
         {
-            // Trater de obtener el Dato (La Lista de Paises) desde el cache y adicionarlo si no esta
+            // Tratar de obtener el Dato (La Lista de Paises) desde el cache y adicionarlo si no esta
             List<Country> countries = await _cacheManager.GetOrAddAsync<List<Country>>("Countries", async () =>
             {
                 return await GetCountries();
@@ -47,7 +47,7 @@ namespace CacheWebApi.Controllers
         [Route("CacheStore")]
         public async Task<ActionResult<IEnumerable<Country>>> GetCountriesUsingCacheStore()
         {
-            // Trater de obtener el Dato (La Lista de Paises) desde el cache
+            // Tratar de obtener el Dato (La Lista de Paises) desde el cache
             List<Country> countries = _cacheStore.Get<List<Country>>("Countries");
 
             // Validar si el dato NO esta en el cache
