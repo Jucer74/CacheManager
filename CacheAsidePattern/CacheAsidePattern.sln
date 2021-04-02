@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7504EF1C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheStore", "Source\CacheStore\CacheStore.csproj", "{3AF73BBA-3519-4892-A709-8D8DDC1345DB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheTests", "Tests\CacheTests\CacheTests.csproj", "{4B259207-E0BB-420A-92C3-2736FE953DD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheAsidePatter.Unit.Tests", "Tests\CacheTests\CacheAsidePatter.Unit.Tests.csproj", "{4B259207-E0BB-420A-92C3-2736FE953DD2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheManager", "Source\CacheManager\CacheManager.csproj", "{439AF2A7-E8CD-48AD-8FFE-1B1F7FB3FE02}"
 EndProject
