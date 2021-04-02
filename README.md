@@ -29,7 +29,8 @@ Nuestra solución consta de tres (3) proyectos:
 ## Recursos
 Se tiene una Base de datos de tipo SQLite como fuente de datos, que contiene la lista de paises del mundo segun el estandar [ISO-3166-1](https://www.iso.org/iso-3166-country-codes.html).
 
+## API para Ejecutar
+Esta es la API que nos permite probrar la implementación del patrón.
 
-
-
+![](https://github.com/Jucer74/CacheManager/blob/main/Images/Cache-Aside-Pattern-WebApi.png)
   
